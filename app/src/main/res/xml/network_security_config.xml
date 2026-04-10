@@ -1,0 +1,17 @@
+<!-- res/xml/network_security_config.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Hanya izinkan HTTPS — tidak ada cleartext traffic -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- CDN domain whitelist -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">cdn.komiklu.com</domain>
+        <domain includeSubdomains="true">img.komiklu.com</domain>
+        <domain includeSubdomains="true">api.komiklu.com</domain>
+    </domain-config>
+</network-security-config>

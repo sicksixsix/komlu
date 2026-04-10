@@ -1,0 +1,141 @@
+<!-- res/values/colors.xml -->
+<resources>
+    <!-- Primary Palette -->
+    <color name="komiklu_black">#000000</color>
+    <color name="komiklu_surface">#111111</color>
+    <color name="komiklu_surface_2">#1A1A1A</color>
+    <color name="komiklu_card">#151515</color>
+    <color name="komiklu_border">#222222</color>
+
+    <!-- Accent -->
+    <color name="komiklu_accent">#00B8CB</color>
+    <color name="komiklu_accent_dark">#008FA0</color>
+    <color name="komiklu_accent_light">#80DDE8</color>
+
+    <!-- Text -->
+    <color name="komiklu_text_primary">#FFFFFF</color>
+    <color name="komiklu_text_secondary">#AAAAAA</color>
+    <color name="komiklu_text_hint">#666666</color>
+
+    <!-- Status -->
+    <color name="komiklu_green">#22C55E</color>
+    <color name="komiklu_red">#EF4444</color>
+    <color name="komiklu_yellow">#FBBF24</color>
+    <color name="komiklu_orange">#FF6B35</color>
+
+    <!-- Transparent overlays -->
+    <color name="overlay_dark_60">#99000000</color>
+    <color name="overlay_dark_80">#CC000000</color>
+</resources>
+
+<!-- ======================================================== -->
+
+<!-- res/values/themes.xml -->
+<resources>
+    <style name="Theme.Komiklu" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/komiklu_black</item>
+        <item name="android:navigationBarColor">@color/komiklu_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Colors -->
+        <item name="colorPrimary">@color/komiklu_accent</item>
+        <item name="colorPrimaryVariant">@color/komiklu_accent_dark</item>
+        <item name="colorOnPrimary">@color/komiklu_black</item>
+        <item name="colorSurface">@color/komiklu_surface</item>
+        <item name="colorOnSurface">@color/komiklu_text_primary</item>
+        <item name="android:colorBackground">@color/komiklu_black</item>
+        <item name="colorOnBackground">@color/komiklu_text_primary</item>
+
+        <!-- Typography -->
+        <item name="fontFamily">@font/inter</item>
+
+        <!-- Bottom Navigation -->
+        <item name="bottomNavigationStyle">@style/Widget.Komiklu.BottomNav</item>
+    </style>
+
+    <!-- Fullscreen untuk Reader -->
+    <style name="Theme.Komiklu.Reader" parent="Theme.Komiklu">
+        <item name="android:statusBarColor">@color/komiklu_black</item>
+        <item name="android:navigationBarColor">@color/komiklu_black</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Splash Screen -->
+    <style name="Theme.Komiklu.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/komiklu_black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_komiklu_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Komiklu</item>
+    </style>
+
+    <!-- Bottom Navigation -->
+    <style name="Widget.Komiklu.BottomNav" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/komiklu_surface</item>
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- Manga Card -->
+    <style name="Widget.Komiklu.MangaCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/komiklu_card</item>
+        <item name="strokeColor">@color/komiklu_border</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <!-- Accent Button -->
+    <style name="Widget.Komiklu.Button.Accent" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/komiklu_accent</item>
+        <item name="android:textColor">@color/komiklu_black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Outlined Button -->
+    <style name="Widget.Komiklu.Button.Outline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/komiklu_border</item>
+        <item name="android:textColor">@color/komiklu_text_secondary</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Search Bar -->
+    <style name="Widget.Komiklu.SearchBar" parent="">
+        <item name="android:background">@drawable/bg_search_bar</item>
+        <item name="android:textColor">@color/komiklu_text_primary</item>
+        <item name="android:textColorHint">@color/komiklu_text_hint</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!-- Chapter Row -->
+    <style name="Widget.Komiklu.ChapterRow" parent="">
+        <item name="android:background">@drawable/selector_chapter_row</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Badge NEW -->
+    <style name="Widget.Komiklu.Badge.New" parent="">
+        <item name="android:background">@drawable/bg_badge_new</item>
+        <item name="android:textColor">@color/komiklu_black</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+</resources>
+
+<!-- ======================================================== -->
+
+<!-- res/color/bottom_nav_color.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#00B8CB" android:state_checked="true" />
+    <item android:color="#666666" />
+</selector>
