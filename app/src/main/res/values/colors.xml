@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary Palette -->
+    <color name="komiklu_black">#000000</color>
+    <color name="komiklu_surface">#111111</color>
+    <color name="komiklu_surface_2">#1A1A1A</color>
+    <color name="komiklu_card">#151515</color>
+    <color name="komiklu_border">#222222</color>
+
+    <!-- Accent -->
+    <color name="komiklu_accent">#00B8CB</color>
+    <color name="komiklu_accent_dark">#008FA0</color>
+    <color name="komiklu_accent_light">#80DDE8</color>
+
+    <!-- Text -->
+    <color name="komiklu_text_primary">#FFFFFF</color>
+    <color name="komiklu_text_secondary">#AAAAAA</color>
+    <color name="komiklu_text_hint">#666666</color>
+
+    <!-- Status -->
+    <color name="komiklu_green">#22C55E</color>
+    <color name="komiklu_red">#EF4444</color>
+    <color name="komiklu_yellow">#FBBF24</color>
+    <color name="komiklu_orange">#FF6B35</color>
+
+    <!-- Transparent overlays -->
+    <color name="overlay_dark_60">#99000000</color>
+    <color name="overlay_dark_80">#CC000000</color>
+
+</resources>
